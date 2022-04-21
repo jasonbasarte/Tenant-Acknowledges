@@ -71,12 +71,15 @@
     letter-spacing: 0.15000000596046448px;
 }
 .page-footer {
-    font-family:  'Inter';
+    font-family:  'Inter'; 
     display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1px;
     justify-content: space-between;
     vertical-align: 3px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding: 0px 48px 0px 48px;
     /* box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12); */
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12);
     position: absolute;
