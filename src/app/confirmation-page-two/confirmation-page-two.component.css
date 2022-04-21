@@ -112,7 +112,7 @@
     text-align: center;
 }
 .selected-contact-field{
-    width: 660px;
+    width: 680px;
 }
 .contact-input-field {
     font-family: 'Inter';
@@ -204,4 +204,7 @@
 .add-circle-icon {
     vertical-align: -7px;
     margin-left: 9px;
+}
+.text-dark {
+    color: #00000099;
 }

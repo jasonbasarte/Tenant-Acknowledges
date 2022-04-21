@@ -19,6 +19,7 @@ import { UserIconComponent } from './user-icon/user-icon.component';
 import { ConfirmationPageTwoComponent } from './confirmation-page-two/confirmation-page-two.component';
 import { ConfirmedPageComponent } from './confirmed-page/confirmed-page.component';
 import { DelegateOnsiteFormComponent } from './delegate-onsite-form/delegate-onsite-form.component';
+import { ConfirmationPageOneComponent } from './confirmation-page-one/confirmation-page-one.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DelegateOnsiteFormComponent } from './delegate-onsite-form/delegate-ons
     ConfirmationPageTwoComponent,
     ConfirmedPageComponent,
     DelegateOnsiteFormComponent,
+    ConfirmationPageOneComponent,
   ],
   imports: [
     BrowserModule,
