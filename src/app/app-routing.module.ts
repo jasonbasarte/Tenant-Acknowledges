@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ConfirmationFormComponent } from "./confirmation-form/confirmation-form.component";
 import { ConfirmationPageTwoComponent } from "./confirmation-page-two/confirmation-page-two.component";
 import { ConfirmedPageComponent } from "./confirmed-page/confirmed-page.component";
+import { DelegateOnsiteFormComponent } from './delegate-onsite-form/delegate-onsite-form.component';
 const routes: Routes = [
   {
     path: "",
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: "confirmed",
     component: ConfirmedPageComponent
+  },
+  {
+    path: "delegate-onsite",
+    component: DelegateOnsiteFormComponent
   },
 ];
 

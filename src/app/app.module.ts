@@ -18,6 +18,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { UserIconComponent } from './user-icon/user-icon.component';
 import { ConfirmationPageTwoComponent } from './confirmation-page-two/confirmation-page-two.component';
 import { ConfirmedPageComponent } from './confirmed-page/confirmed-page.component';
+import { DelegateOnsiteFormComponent } from './delegate-onsite-form/delegate-onsite-form.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ConfirmedPageComponent } from './confirmed-page/confirmed-page.componen
     UserIconComponent,
     ConfirmationPageTwoComponent,
     ConfirmedPageComponent,
+    DelegateOnsiteFormComponent,
   ],
   imports: [
     BrowserModule,

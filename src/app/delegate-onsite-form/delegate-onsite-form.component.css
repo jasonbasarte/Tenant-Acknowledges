@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope&display=swap');
+
+.header-container {
+    background: #FFFFFF;
+    box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12);
+    height: 48px;
+    padding-top: 6px;
+}
+.main-container {
+    width: 772px;
+    margin: 24px auto;
+    background: #FFFFFF;
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    padding: 32px 24px 54px 24px;
+    margin-bottom: 398px !important; 
+    /* text-align: center; */
+}
+.label-one {
+    margin-top: 29px;
+    text-align: center;
+    width: 100%;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.label-two {
+    margin-top: 24px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left; 
+}
+.date-time {
+    margin-top: 24px;
+    text-align: center;
+    width: 100%;
+}
+.date {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.15000000596046448px;
+    margin-right: 25px;
+}
+.date-icon {
+    font-size: 19px;
+    vertical-align: -3px;
+    color: #0000008A;
+    margin-right: 5px;
+}
+.time {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.15000000596046448px;
+}
+.selected-contact-field-container{
+    width: 100%;
+    margin-top: 15px;
+    /* text-align: center; */
+}
+.selected-contact-field{
+    width: 100%;
+    margin-top: 16px;
+}
+.contact-input-field {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+}
+.details-field-container {
+    width: 774px;
+    height: 91px;
+    padding: 0px, 12px, 0px, 12px;
+    font-family:  'Inter'; 
+}
+.details-textarea {
+    height: 60px;
+    resize: none;
+}
+.field-msg {
+    text-align: left;
+    font-family: 'Inter';
+    font-style: Regular;
+    font-size: 12px;
+    letter-spacing: 0.15px;
+    color: #00000099;
+}
+.submit-button {
+    width: 220px;
+    height: 36px;
+    background: #007DFF;
+    color: white; 
+    margin: 16px auto; 
+}
+.btn-submit-div {
+    display: flex;
+    justify-content: center;
+}
+.page-footer {
+    font-family:  'Inter';
+    display: flex;
+    justify-content: space-between;
+    vertical-align: 3px;
+    padding-left: 48px;
+    padding-right: 48px;
+    /* box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12); */
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100vw - 96px);
+}

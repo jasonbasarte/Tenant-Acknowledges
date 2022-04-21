@@ -1,0 +1,49 @@
+<div>
+    <mat-toolbar class="header-container">
+        <span>
+            <app-logo></app-logo>
+        </span>
+        <span class="example-spacer"></span>
+    </mat-toolbar>
+    <mat-card class="main-container">
+        <app-logo-link></app-logo-link>
+        <div class="label-one">
+            Delegate to on-site contact for the inspection
+        </div>
+        <div class="date-time">
+            <span class="date">
+                <mat-icon class="date-icon">calendar_today</mat-icon>April 4, 2022
+            </span>
+            <span class="time">
+                <mat-icon class="date-icon">access_time</mat-icon> Morning(8 AM - 12 PM)
+            </span>
+        </div>
+        <div class="label-two">
+            Whom should we contact for this property? Please provide the contact information.
+        </div>
+        <div class="selected-contact-field-container">
+            <div class="field-msg">Enter contact name (Optional)</div>
+            <mat-form-field appearance="fill" class="selected-contact-field">
+                <mat-label>Contact Name</mat-label>
+                <input matInput value="Johnie Robbins" class="contact-input-field">
+            </mat-form-field>
+            <div class="field-msg">Enter contact phone number (Required)</div>
+            <mat-form-field appearance="fill" class="selected-contact-field">
+                <mat-label>Contact Phone Number</mat-label>
+                <input matInput value="(234) 567-8912" class="contact-input-field">
+            </mat-form-field>
+            <div class="field-msg">Enter contact email address (Optional)</div>
+            <mat-form-field appearance="fill" class="selected-contact-field">
+                <mat-label>Contact Email Address</mat-label>
+                <input matInput value="johnnie.robbins@example.com" class="contact-input-field">
+            </mat-form-field>
+            <div class="btn-submit-div">
+                <button mat-stroked-button class="submit-button">Submit</button>
+            </div>
+        </div>
+    </mat-card>
+    <mat-card class="page-footer">
+        <span>© Velocity 2021</span>
+        <span>SUPPORT F.A.Q</span>
+    </mat-card>
+</div>
