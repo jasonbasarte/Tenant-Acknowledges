@@ -17,6 +17,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { UserIconComponent } from './user-icon/user-icon.component';
 import { ConfirmationPageTwoComponent } from './confirmation-page-two/confirmation-page-two.component';
+import { ConfirmedPageComponent } from './confirmed-page/confirmed-page.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ConfirmationPageTwoComponent } from './confirmation-page-two/confirmati
     ConfirmationFormComponent,
     UserIconComponent,
     ConfirmationPageTwoComponent,
+    ConfirmedPageComponent,
   ],
   imports: [
     BrowserModule,
