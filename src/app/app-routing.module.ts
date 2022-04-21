@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ConfirmationFormComponent } from "./confirmation-form/confirmation-form.component";
 const routes: Routes = [
   {
-    path: "confirmation-form",
+    path: "",
     component: ConfirmationFormComponent
   }
 ];
