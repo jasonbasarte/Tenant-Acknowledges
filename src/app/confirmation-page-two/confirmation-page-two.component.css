@@ -100,6 +100,28 @@
 
     /* box-sizing: 0px 3px 3px 2px #cbcbcb !important; */
 }
+.selected-contact-person {
+    width: 742px;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;    
+    box-shadow:  0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12);
+}
+.selected-contact-field-container{
+    margin-top: 32px;
+    text-align: center;
+}
+.selected-contact-field{
+    width: 660px;
+}
+.contact-input-field {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: left;
+}
 .contact-person {
     font-family:  'Inter'; 
     display: flex;
@@ -147,6 +169,15 @@
     border: 1px solid #007DFF;
     color: #007DFF;
     padding-left: 6px;
+}
+
+.cancel-button {
+    margin-right: 5px;
+}
+
+.save-button {
+    background: #007DFF;
+    color: white;
 }
 
 .edit-icon {

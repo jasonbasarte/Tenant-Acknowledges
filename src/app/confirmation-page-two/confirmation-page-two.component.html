@@ -1,0 +1,116 @@
+<div>
+    <mat-toolbar class="header-container">
+        <span>
+            <app-logo></app-logo>
+        </span>
+        <span class="example-spacer"></span>
+    </mat-toolbar>
+    <mat-card class="main-container">
+        <app-logo-link></app-logo-link>
+        <div class="confirmation-label">Confirmation</div>
+        <div class="confirm-detail-one">
+            <div class="confirm-detail-msg">
+                Please confirm that you acknowledged our vendor’s visit between March 2, 2022 - March 7, 2022
+                Morning (8 AM - 12 PM).
+                Thank you!
+            </div>
+        </div>
+        <div class="confirm-detail-two">
+            Please provide the access procedure for your space. Please be sure to include any contact information that
+            may
+            be required or any key codes that may be needed for locks.
+        </div>
+        <mat-form-field appearance="fill" class="details-field-container">
+            <mat-label>Details</mat-label>
+            <textarea class="details-textarea" matInput matInput
+                value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
+        </mat-form-field>
+        <div class="p-label">Is there anything we should know about COVID-19 protocols?</div>
+        <mat-form-field appearance="fill" class="details-field-container">
+            <mat-label>Details</mat-label>
+            <textarea class="details-textarea" matInput matInput
+                value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."></textarea>
+        </mat-form-field>
+        <p class="p-label">
+            These are the contact information we have on file. Please select the person we should contact.
+        </p>
+        <mat-card class="contact-person-card">
+            <div class="contact-person">
+                <mat-checkbox class="mat-checkbox margin-top" color="primary">
+                </mat-checkbox>
+                <app-user-icon class="user-icon margin-top"></app-user-icon>
+                <div class="contact-info">
+                    <div class="contact-info-margin-top contact-name">Johnie Robbins</div>
+                    <div class="contact-info-margin-top">(234) 567-8912</div>
+                    <div class="contact-info-margin-top">johnnie.robbins@example.com</div>
+                </div>
+            </div>
+        </mat-card>
+        <mat-card class="contact-person-card">
+            <div class="contact-person">
+                <mat-checkbox class="mat-checkbox margin-top" color="primary">
+                </mat-checkbox>
+                <app-user-icon class="user-icon margin-top"></app-user-icon>
+                <div class="contact-info">
+                    <div class="contact-info-margin-top contact-name">Johnie Robbins</div>
+                    <div class="contact-info-margin-top">(234) 567-8912</div>
+                    <div class="contact-info-margin-top">johnnie.robbins@example.com</div>
+                </div>
+            </div>
+        </mat-card>
+        <mat-card class="contact-person-card">
+            <div class="contact-person">
+                <mat-checkbox class="mat-checkbox margin-top" color="primary">
+                </mat-checkbox>
+                <app-user-icon class="user-icon margin-top"></app-user-icon>
+                <div class="contact-info">
+                    <div class="contact-info-margin-top contact-name">Johnie Robbins</div>
+                    <div class="contact-info-margin-top">(234) 567-8912</div>
+                    <div class="contact-info-margin-top">johnnie.robbins@example.com</div>
+                </div>
+            </div>
+        </mat-card>
+        <div class="add-contact-container">
+            <span>Don't see the desired contact?</span> <span class="add-contact">Add Contact <mat-icon class="add-circle-icon">
+                add_circle</mat-icon></span>
+        </div>
+        <div class="p-label">
+            If needed, please update the contact information.
+        </div>
+        <mat-card class="selected-contact-person">
+            <div class="contact-person">
+                <app-user-icon class="user-icon-two"></app-user-icon>
+                <div class="contact-info">
+                    <div class="contact-name">Johnie Robbins</div>
+                    <div class="contact-info-margin-top">(234) 567-8912</div>
+                    <div class="contact-info-margin-top">johnnie.robbins@example.com</div>
+                </div>
+                <div class="edit-btn-container">
+                    <button mat-button class="cancel-button">Cancel</button>
+                    <button mat-button class="save-button">
+                        Save
+                    </button>
+                </div>
+            </div>
+            <div class="selected-contact-field-container">
+                <mat-form-field appearance="fill" class="selected-contact-field">
+                    <mat-label>Contact Name</mat-label>
+                    <input matInput value="Johnie Robbins" class="contact-input-field">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="selected-contact-field">
+                    <mat-label>Contact Phone Number</mat-label>
+                    <input matInput value="(234) 567-8912" class="contact-input-field">
+                </mat-form-field>
+                <mat-form-field appearance="fill" class="selected-contact-field">
+                    <mat-label>Contact Email Address</mat-label>
+                    <input matInput value="johnnie.robbins@example.com" class="contact-input-field">
+                </mat-form-field>
+            </div>
+        </mat-card>
+        <button mat-stroked-button class="submit-button">Submit</button>
+    </mat-card>
+    <mat-card class="page-footer">
+        <span>© Velocity 2021</span>
+        <span>SUPPORT F.A.Q</span>
+    </mat-card>
+</div>

@@ -16,6 +16,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { UserIconComponent } from './user-icon/user-icon.component';
+import { ConfirmationPageTwoComponent } from './confirmation-page-two/confirmation-page-two.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { UserIconComponent } from './user-icon/user-icon.component';
     LogoLinkComponent,
     ConfirmationFormComponent,
     UserIconComponent,
+    ConfirmationPageTwoComponent,
   ],
   imports: [
     BrowserModule,
