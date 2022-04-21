@@ -32,8 +32,8 @@
 
 .user-icon-two {
     margin-top: 1px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 4px;
+    margin-right: 16px;
 }
 .confirmation-label {
     height: 29px;
@@ -112,7 +112,7 @@
     text-align: center;
 }
 .selected-contact-field{
-    width: 680px;
+    width: 95%;
 }
 .contact-input-field {
     font-family: 'Inter';
