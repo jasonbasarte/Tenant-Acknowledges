@@ -5,10 +5,16 @@ import { ConfirmationPageOneComponent } from './confirmation-page-one/confirmati
 import { ConfirmationPageTwoComponent } from "./confirmation-page-two/confirmation-page-two.component";
 import { ConfirmedPageComponent } from "./confirmed-page/confirmed-page.component";
 import { DelegateOnsiteFormComponent } from './delegate-onsite-form/delegate-onsite-form.component';
+import { TenantConfirmationComponent } from './tenant-confirmation/tenant-confirmation.component';
+
 
 const routes: Routes = [
   {
     path: "",
+    component: TenantConfirmationComponent
+  },
+  {
+    path: "home",
     component: ConfirmationFormComponent
   },
   {
@@ -26,7 +32,7 @@ const routes: Routes = [
   {
     path: "delegate-onsite",
     component: DelegateOnsiteFormComponent
-  },
+  }
 ];
 
 @NgModule({

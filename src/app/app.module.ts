@@ -15,11 +15,16 @@ import { MatInputModule } from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 import { UserIconComponent } from './user-icon/user-icon.component';
 import { ConfirmationPageTwoComponent } from './confirmation-page-two/confirmation-page-two.component';
 import { ConfirmedPageComponent } from './confirmed-page/confirmed-page.component';
 import { DelegateOnsiteFormComponent } from './delegate-onsite-form/delegate-onsite-form.component';
 import { ConfirmationPageOneComponent } from './confirmation-page-one/confirmation-page-one.component';
+import { TenantConfirmationComponent, TenantDialogComponent, InspectionDialog } from './tenant-confirmation/tenant-confirmation.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +37,10 @@ import { ConfirmationPageOneComponent } from './confirmation-page-one/confirmati
     ConfirmedPageComponent,
     DelegateOnsiteFormComponent,
     ConfirmationPageOneComponent,
+    TenantConfirmationComponent,
+    InspectionDialog, 
+    TenantDialogComponent,
+    InspectionDialog,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +53,8 @@ import { ConfirmationPageOneComponent } from './confirmation-page-one/confirmati
     MatCheckboxModule,
     MatIconModule,
     MatButtonModule,
+    MatDialogModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

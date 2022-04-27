@@ -1,0 +1,289 @@
+<div class="dialog-title">Inspection Calendar</div>
+<mat-accordion>
+
+    <mat-expansion-panel (opened)="inspectionPanelOpenState = true" (closed)="inspectionPanelOpenState = false"
+        hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title style="display: flex; justify-content: space-between;">
+                <span>
+                    <svg style="vertical-align: -5px" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="black" fill-opacity="0.54" />
+                    </svg>
+
+                    <svg style="vertical-align: -4px" class="calendar-icon" width="20" height="20" viewBox="0 0 20 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.666 2.50016H15.8327V0.833496H14.166V2.50016H5.83268V0.833496H4.16602V2.50016H3.33268C2.41602 2.50016 1.66602 3.25016 1.66602 4.16683V17.5002C1.66602 18.4168 2.41602 19.1668 3.33268 19.1668H16.666C17.5827 19.1668 18.3327 18.4168 18.3327 17.5002V4.16683C18.3327 3.25016 17.5827 2.50016 16.666 2.50016ZM16.666 17.5002H3.33268V6.66683H16.666V17.5002Z"
+                            fill="black" fill-opacity="0.26" />
+                    </svg>
+                    <span class="complete-date">March 2, 2022</span> <span class="day">Tuesday</span>
+                </span>
+                <span class="responses-num">
+                    2 responses
+                </span>
+            </mat-panel-title>
+
+        </mat-expansion-panel-header>
+
+        <!-- Tenant a -->
+        <div class="tenant-a">
+            <div v-if="inspectionPanelOpenState" class="horizontal-line"></div>
+
+            <p>
+                <span class="tenant-a"> Tenant A </span> <span class="suite-100">Suite 100</span>
+                <span class="time">Morning (8 AM - 12 PM)</span>
+            </p>
+
+            <!-- Property section -->
+            <div class="property-container">
+                <div class="item-label">Property</div>
+                <div>
+                    <span class="property-text-one">11806 Bldg. B & 11880 Bldg. C Pacific Ave.</span>
+                    <span class="property-code">bc75001</span>
+                </div>
+                <div class="property-text-two">11806 Bldg. B & 11880 Bldg. C Pacific Ave. Fontana, CA 92337</div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-information">
+                <div class="item-label contact-info-label">Contact Information</div>
+
+                <div class="contact-info-item selected-contact-info">
+                    <svg class="responded-user-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z"
+                            fill="#4CAF50" />
+                    </svg>
+
+                    <div>
+                        <div>Johnnie Robbins</div>
+                        <div class="contact-num-email">(234) 567-8912 | johnnie.robbins@example.com</div>
+                    </div>
+
+                    <span class="responded">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.0001 10.7799L3.2201 7.9999L2.27344 8.9399L6.0001 12.6666L14.0001 4.66656L13.0601 3.72656L6.0001 10.7799Z"
+                                fill="#3B873E" />
+                        </svg>
+                        Responded
+                    </span>
+                </div>
+
+                <div class="contact-info-item">
+                    <svg class="responded-user-inactive-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"
+                        fill="black" fill-opacity="0.26" />
+                    </svg>
+
+                    <div>
+                        <div>Pamela Stewart</div>
+                        <div class="contact-num-email contact-num-email-inactive">(217) 555-0113 | pamela.stewart@example.com</div>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <svg class="responded-user-inactive-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"
+                            fill="black" fill-opacity="0.26" />
+                    </svg>
+
+                    <div>
+                        <div>Martha Barker</div>
+                        <div class="contact-num-email contact-num-email-inactive">(406) 555-0120 | martha.barker@example.com</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paragraph-one">
+                <span class="p-text-label">
+                    Please provide the access procedure for your space. Please be sure to include any contact
+                    information
+                    that may
+                    be required or any key codes that may be needed for locks.
+                </span>
+                <p class="p-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat.
+                </p>
+            </div>
+
+            <div class="paragraph-two">
+                <span class="p-text-label">
+                    Is there anything we should know about COVID-19 protocols?
+                </span>
+                <p class="p-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Tenant B -->
+        <div class="tenant-b">
+            <div v-if="inspectionPanelOpenState" class="horizontal-line" style="margin-top: 30px;"></div>
+
+            <p>
+                <span class="tenant-a"> Tenant B </span> <span class="suite-100">Suite 200</span>
+                <span class="time">Morning (8 AM - 12 PM)</span>
+            </p>
+
+            <!-- Property section -->
+            <div class="property-container">
+                <div class="item-label">Property</div>
+                <div>
+                    <span class="property-text-one">11806 Bldg. B & 11880 Bldg. C Pacific Ave.</span>
+                    <span class="property-code">bc75001</span>
+                </div>
+                <div class="property-text-two">11806 Bldg. B & 11880 Bldg. C Pacific Ave. Fontana, CA 92337</div>
+            </div>
+
+
+            <!-- Contact Information -->
+            <div class="contact-information">
+                <div class="item-label contact-info-label">Contact Information</div>
+
+                <div class="contact-info-item selected-contact-info">
+                    <svg class="responded-user-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z"
+                            fill="#4CAF50" />
+                    </svg>
+
+                    <div>
+                        <div>Johnnie Robbins</div>
+                        <div class="contact-num-email">(234) 567-8912 | johnnie.robbins@example.com</div>
+                    </div>
+
+                    <span class="responded">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.0001 10.7799L3.2201 7.9999L2.27344 8.9399L6.0001 12.6666L14.0001 4.66656L13.0601 3.72656L6.0001 10.7799Z"
+                                fill="#3B873E" />
+                        </svg>
+                        Responded
+                    </span>
+                </div>
+
+                <div class="contact-info-item">
+                    <svg class="responded-user-inactive-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"
+                        fill="black" fill-opacity="0.26" />
+                    </svg>
+
+                    <div>
+                        <div>Martha Barker</div>
+                        <div class="contact-num-email contact-num-email-inactive">(406) 555-0120 | martha.barker@example.com</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paragraph-one">
+                <span class="p-text-label">
+                    Please provide the access procedure for your space. Please be sure to include any contact
+                    information
+                    that may
+                    be required or any key codes that may be needed for locks.
+                </span>
+                <p class="p-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat.
+                </p>
+            </div>
+
+            <div class="paragraph-two">
+                <span class="p-text-label">
+                    Is there anything we should know about COVID-19 protocols?
+                </span>
+                <p class="p-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea
+                    commodo
+                    consequat.
+                </p>
+            </div>
+        </div>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel style="margin-top: 10px;" (opened)="inspectionPanelOpenState = true" (closed)="inspectionPanelOpenState = false"
+        hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title style="display: flex; justify-content: space-between;">
+                <span>
+                    <svg style="vertical-align: -5px" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="black" fill-opacity="0.54" />
+                    </svg>
+
+                    <svg style="vertical-align: -4px" class="calendar-icon" width="20" height="20" viewBox="0 0 20 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.666 2.50016H15.8327V0.833496H14.166V2.50016H5.83268V0.833496H4.16602V2.50016H3.33268C2.41602 2.50016 1.66602 3.25016 1.66602 4.16683V17.5002C1.66602 18.4168 2.41602 19.1668 3.33268 19.1668H16.666C17.5827 19.1668 18.3327 18.4168 18.3327 17.5002V4.16683C18.3327 3.25016 17.5827 2.50016 16.666 2.50016ZM16.666 17.5002H3.33268V6.66683H16.666V17.5002Z"
+                            fill="black" fill-opacity="0.26" />
+                    </svg>
+                    <span class="complete-date">March 3, 2022</span> <span class="day">Wednesday</span>
+                </span>
+                <span class="responses-num">
+                    3 responses
+                </span>
+            </mat-panel-title>
+
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel style="margin-top: 10px;" (opened)="inspectionPanelOpenState = true" (closed)="inspectionPanelOpenState = false"
+        hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title style="display: flex; justify-content: space-between;">
+                <span>
+                    <svg style="vertical-align: -5px" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 10L12 15L17 10H7Z" fill="black" fill-opacity="0.54" />
+                    </svg>
+
+                    <svg style="vertical-align: -4px" class="calendar-icon" width="20" height="20" viewBox="0 0 20 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.666 2.50016H15.8327V0.833496H14.166V2.50016H5.83268V0.833496H4.16602V2.50016H3.33268C2.41602 2.50016 1.66602 3.25016 1.66602 4.16683V17.5002C1.66602 18.4168 2.41602 19.1668 3.33268 19.1668H16.666C17.5827 19.1668 18.3327 18.4168 18.3327 17.5002V4.16683C18.3327 3.25016 17.5827 2.50016 16.666 2.50016ZM16.666 17.5002H3.33268V6.66683H16.666V17.5002Z"
+                            fill="black" fill-opacity="0.26" />
+                    </svg>
+                    <span class="complete-date">March 4, 2022</span> <span class="day">Thursday</span>
+                </span>
+                <span class="responses-num">
+                    1 responses
+                </span>
+            </mat-panel-title>
+
+        </mat-expansion-panel-header>
+    </mat-expansion-panel>
+
+</mat-accordion>
