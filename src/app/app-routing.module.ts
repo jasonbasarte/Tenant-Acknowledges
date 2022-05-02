@@ -6,12 +6,12 @@ import { ConfirmationPageTwoComponent } from "./confirmation-page-two/confirmati
 import { ConfirmedPageComponent } from "./confirmed-page/confirmed-page.component";
 import { DelegateOnsiteFormComponent } from './delegate-onsite-form/delegate-onsite-form.component';
 import { TenantConfirmationComponent } from './tenant-confirmation/tenant-confirmation.component';
-
+import { ManangeTenantComponent } from './manange-tenant/manange-tenant.component';
 
 const routes: Routes = [
   {
     path: "",
-    component: TenantConfirmationComponent
+    component: ManangeTenantComponent
   },
   {
     path: "home",
@@ -40,3 +40,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+ 

@@ -24,6 +24,7 @@ import { ConfirmedPageComponent } from './confirmed-page/confirmed-page.componen
 import { DelegateOnsiteFormComponent } from './delegate-onsite-form/delegate-onsite-form.component';
 import { ConfirmationPageOneComponent } from './confirmation-page-one/confirmation-page-one.component';
 import { TenantConfirmationComponent, TenantDialogComponent, InspectionDialog } from './tenant-confirmation/tenant-confirmation.component';
+import { ManangeTenantComponent } from './manange-tenant/manange-tenant.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { TenantConfirmationComponent, TenantDialogComponent, InspectionDialog } 
     InspectionDialog, 
     TenantDialogComponent,
     InspectionDialog,
+    ManangeTenantComponent,
   ],
   imports: [
     BrowserModule,

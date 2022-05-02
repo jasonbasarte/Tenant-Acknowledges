@@ -1,0 +1,121 @@
+<div>
+    <mat-toolbar class="header-container">
+        <span>
+            <app-logo></app-logo>
+        </span>
+        <span class="example-spacer"></span>
+    </mat-toolbar>
+    <mat-card class="main-container">
+        <app-logo-link></app-logo-link>
+        <div class="main-title">Manage Tenants Contact Information</div>
+        <div class="main-title-p">Please provide the contact information for all the tenants.</div>
+
+        <!-- Property section -->
+        <div class="property-container">
+            <div class="item-label">Property</div>
+            <div>
+                <span class="property-text-one">11806 Bldg. B & 11880 Bldg. C Pacific Ave.</span>
+                <span class="property-code">bc75001</span>
+            </div>
+            <div class="property-text-two">11806 Bldg. B & 11880 Bldg. C Pacific Ave. Fontana, CA 92337</div>
+        </div>
+        <div class="horizontal-line-property"></div>
+
+        <!-- Accordion 1 -->
+        <mat-accordion style="width: 100%;">
+            <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                hideToggle>
+                <mat-expansion-panel-header style="padding-left: 15px">
+                    <mat-panel-title>
+                       <mat-icon>arrow_right</mat-icon>
+                       <span class="panel-label">Tri Way Industries Inc.</span>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <div v-if="tenantPanelOpenState" class="horizontal-line"></div>
+
+                <mat-accordion class="inner-accordion">
+
+                    <!-- Suite No -->
+                    <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                        hideToggle> 
+                        <mat-expansion-panel-header  style="height: 50px; padding-left: 10px; padding-right: 10px">
+                            <mat-panel-title>
+                                <mat-icon class="arrow-drop-down-icon">minimize</mat-icon>
+                                <span class="suite-no">Suite No</span>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <div class="inner-accordion-container">   
+                            <mat-accordion class="inner-accordion-two">
+                                <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                                    hideToggle>
+                                    <mat-expansion-panel-header style="height: 45px;">
+                                        <mat-panel-title>
+                                            <mat-icon style="color: rgba(0, 0, 0, 0.54); margin-right: 20px">person</mat-icon><span class="suite-no">Johnie Robbins</span>
+                                        </mat-panel-title>
+                                        <div class="contact-action-icon">
+                                            <mat-icon class="delete-icon">delete</mat-icon>
+                                            <mat-icon>keyboard_arrow_down</mat-icon>
+                                        </div>
+                                    </mat-expansion-panel-header>
+                                    <div class="inner-contact-info text-dark">(234) 567-8912</div>
+                                    <div class="inner-contact-info inner-contact-email text-dark">johnnie.robbins@example.com</div>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                            <div class="add-contact">
+                                <mat-icon class="add-contact-icon">add</mat-icon>
+                                Add Contact
+                            </div>
+                        </div>
+                    </mat-expansion-panel>
+
+                    <!-- Suite No -->
+                    <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                        hideToggle> 
+                        <mat-expansion-panel-header  style="height: 50px; padding-left: 10px; padding-right: 10px">
+                            <mat-panel-title>
+                                <mat-icon class="plus-icon">add</mat-icon>
+                                <span class="suite-no">Suite No</span>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                    </mat-expansion-panel>
+                    
+                </mat-accordion>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <!-- Accordion 2 -->
+        <mat-accordion style="width: 100%; margin-top: 24px">
+            <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                hideToggle>
+                <mat-expansion-panel-header style="padding-left: 15px">
+                    <mat-panel-title>
+                    	<mat-icon>arrow_right</mat-icon>
+                       <span class="panel-label">Associated Materials LLC</span>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+        <!-- Accordion 3 -->
+        <mat-accordion style="width: 100%; margin-top: 24px">
+            <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                hideToggle>
+                <mat-expansion-panel-header style="padding-left: 15px">
+                    <mat-panel-title>
+                    	<mat-icon>arrow_right</mat-icon>
+                       <span class="panel-label">Tailored Shared Services, LLC</span>
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+            </mat-expansion-panel>
+        </mat-accordion>
+
+<div class="button-submit-container">
+    <button class="button-submit" mat-raised-button color="primary">Submit</button>
+</div>
+    </mat-card>
+    <mat-card class="page-footer">
+        <span>© VELOCITY 2021</span>
+        <span>SUPPORT F.A.Q</span>
+    </mat-card>
+</div>
