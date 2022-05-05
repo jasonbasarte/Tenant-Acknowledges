@@ -30,57 +30,37 @@
                        <mat-icon>arrow_right</mat-icon>
                        <span class="panel-label">Tri Way Industries Inc.</span>
                     </mat-panel-title>
+                    <div class="contact-info">
+                        <span class="contact-info-status missing-contact">Missing Contact Information</span>
+                    </div>
                 </mat-expansion-panel-header>
 
                 <div v-if="tenantPanelOpenState" class="horizontal-line"></div>
-
-                <mat-accordion class="inner-accordion">
-
-                    <!-- Suite No -->
-                    <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
-                        hideToggle> 
-                        <mat-expansion-panel-header  style="height: 50px; padding-left: 10px; padding-right: 10px">
-                            <mat-panel-title>
-                                <mat-icon class="arrow-drop-down-icon">minimize</mat-icon>
-                                <span class="suite-no">Suite No</span>
-                            </mat-panel-title>
-                        </mat-expansion-panel-header>
-                        <div class="inner-accordion-container">   
-                            <mat-accordion class="inner-accordion-two">
-                                <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
-                                    hideToggle>
-                                    <mat-expansion-panel-header style="height: 45px;">
-                                        <mat-panel-title>
-                                            <mat-icon style="color: rgba(0, 0, 0, 0.54); margin-right: 20px">person</mat-icon><span class="suite-no">Johnie Robbins</span>
-                                        </mat-panel-title>
-                                        <div class="contact-action-icon">
-                                            <mat-icon class="delete-icon">delete</mat-icon>
-                                            <mat-icon>keyboard_arrow_down</mat-icon>
-                                        </div>
-                                    </mat-expansion-panel-header>
-                                    <div class="inner-contact-info text-dark">(234) 567-8912</div>
-                                    <div class="inner-contact-info inner-contact-email text-dark">johnnie.robbins@example.com</div>
-                                </mat-expansion-panel>
-                            </mat-accordion>
-                            <div class="add-contact">
-                                <mat-icon class="add-contact-icon">add</mat-icon>
-                                Add Contact
-                            </div>
-                        </div>
-                    </mat-expansion-panel>
-
-                    <!-- Suite No -->
-                    <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
-                        hideToggle> 
-                        <mat-expansion-panel-header  style="height: 50px; padding-left: 10px; padding-right: 10px">
-                            <mat-panel-title>
-                                <mat-icon class="plus-icon">add</mat-icon>
-                                <span class="suite-no">Suite No</span>
-                            </mat-panel-title>
-                        </mat-expansion-panel-header>
-                    </mat-expansion-panel>
-                    
-                </mat-accordion>
+                <div class="expansion-item-label">
+                    <span class="expansion-text-one">Suites:</span> <span class="expansion-text-two">100A 200B 300C 400D | 40,000sf (XX%)</span>
+                </div>
+                <div class="inner-accordion-container">   
+                    <mat-accordion class="inner-accordion-two">
+                        <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                            hideToggle>
+                            <mat-expansion-panel-header style="height: 45px; padding-left: 20px">
+                                <mat-panel-title>
+                                    <mat-icon style="color: rgba(0, 0, 0, 0.54); margin-right: 20px">person</mat-icon><span class="suite-no">Johnie Robbins</span>
+                                </mat-panel-title>
+                                <div class="contact-action-icon">
+                                    <mat-icon class="delete-icon">delete</mat-icon>
+                                    <mat-icon>keyboard_arrow_down</mat-icon>
+                                </div>
+                            </mat-expansion-panel-header>
+                            <div class="inner-contact-info text-dark">(234) 567-8912</div>
+                            <div class="inner-contact-info inner-contact-email text-dark">johnnie.robbins@example.com</div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    <div class="add-contact">
+                        <mat-icon class="add-contact-icon">add</mat-icon>
+                        Add Contact
+                    </div>
+                </div>
             </mat-expansion-panel>
         </mat-accordion>
 
@@ -90,10 +70,56 @@
                 hideToggle>
                 <mat-expansion-panel-header style="padding-left: 15px">
                     <mat-panel-title>
-                    	<mat-icon>arrow_right</mat-icon>
+                       <mat-icon>arrow_right</mat-icon>
                        <span class="panel-label">Associated Materials LLC</span>
                     </mat-panel-title>
+                    <div class="contact-info">
+                        <span class="contact-info-status contact-complete">Contact Information Complete</span>
+                    </div>
                 </mat-expansion-panel-header>
+
+                <div v-if="tenantPanelOpenState" class="horizontal-line"></div>
+                <div class="expansion-item-label">
+                    <span class="expansion-text-one">Suites:</span> <span class="expansion-text-two">100A 200B 300C 400D | 40,000sf (XX%)</span>
+                </div>
+                <div class="inner-accordion-container">   
+                    <mat-accordion class="inner-accordion-two">
+                        <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                            hideToggle>
+                            <mat-expansion-panel-header style="height: 45px; padding-left: 20px">
+                                <mat-panel-title>
+                                    <mat-icon style="color: rgba(0, 0, 0, 0.54); margin-right: 20px">person</mat-icon><span class="suite-no">Johnie Robbins</span>
+                                </mat-panel-title>
+                                <div class="contact-action-icon">
+                                    <mat-icon class="delete-icon">delete</mat-icon>
+                                    <mat-icon>keyboard_arrow_down</mat-icon>
+                                </div>
+                            </mat-expansion-panel-header>
+                            <div class="inner-contact-info text-dark">(234) 567-8912</div>
+                            <div class="inner-contact-info inner-contact-email text-dark">johnnie.robbins@example.com</div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    <mat-accordion class="inner-accordion-two">
+                        <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                            hideToggle>
+                            <mat-expansion-panel-header style="height: 45px; padding-left: 20px">
+                                <mat-panel-title>
+                                    <mat-icon style="color: rgba(0, 0, 0, 0.54); margin-right: 20px">person</mat-icon><span class="suite-no">Johnie Robbins</span>
+                                </mat-panel-title>
+                                <div class="contact-action-icon">
+                                    <mat-icon class="delete-icon">delete</mat-icon>
+                                    <mat-icon>keyboard_arrow_down</mat-icon>
+                                </div>
+                            </mat-expansion-panel-header>
+                            <div class="inner-contact-info text-dark">(234) 567-8912</div>
+                            <div class="inner-contact-info inner-contact-email text-dark">johnnie.robbins@example.com</div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    <div class="add-contact">
+                        <mat-icon class="add-contact-icon">add</mat-icon>
+                        Add Contact
+                    </div>
+                </div>
             </mat-expansion-panel>
         </mat-accordion>
 
@@ -103,10 +129,40 @@
                 hideToggle>
                 <mat-expansion-panel-header style="padding-left: 15px">
                     <mat-panel-title>
-                    	<mat-icon>arrow_right</mat-icon>
+                       <mat-icon>arrow_right</mat-icon>
                        <span class="panel-label">Tailored Shared Services, LLC</span>
                     </mat-panel-title>
+                    <div class="contact-info">
+                        <span class="contact-info-status contact-complete">Contact Information Complete</span>
+                    </div>
                 </mat-expansion-panel-header>
+
+                <div v-if="tenantPanelOpenState" class="horizontal-line"></div>
+                <div class="expansion-item-label">
+                    <span class="expansion-text-one">Suites:</span> <span class="expansion-text-two">100A 200B 300C 400D | 40,000sf (XX%)</span>
+                </div>
+                <div class="inner-accordion-container">   
+                    <mat-accordion class="inner-accordion-two">
+                        <mat-expansion-panel (opened)="tenantPanelOpenState = true" (closed)="tenantPanelOpenState = false"
+                            hideToggle>
+                            <mat-expansion-panel-header style="height: 45px; padding-left: 20px">
+                                <mat-panel-title>
+                                    <mat-icon style="color: rgba(0, 0, 0, 0.54); margin-right: 20px">person</mat-icon><span class="suite-no">Johnie Robbins</span>
+                                </mat-panel-title>
+                                <div class="contact-action-icon">
+                                    <mat-icon class="delete-icon">delete</mat-icon>
+                                    <mat-icon>keyboard_arrow_down</mat-icon>
+                                </div>
+                            </mat-expansion-panel-header>
+                            <div class="inner-contact-info text-dark">(234) 567-8912</div>
+                            <div class="inner-contact-info inner-contact-email text-dark">johnnie.robbins@example.com</div>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                    <div class="add-contact">
+                        <mat-icon class="add-contact-icon">add</mat-icon>
+                        Add Contact
+                    </div>
+                </div>
             </mat-expansion-panel>
         </mat-accordion>
 
